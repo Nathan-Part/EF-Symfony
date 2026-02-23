@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil !{% endblock %}
+
+{% block body %}
+
+    {% if app.user %}
+        information
+    {% else %}
+        <div class="mb-3">
+            Connectez vous pour voir les informations 
+        </div>
+    {% endif %}
+
+{% endblock %}
