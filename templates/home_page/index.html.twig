@@ -5,7 +5,8 @@
 {% block body %}
 
     {% if app.user %}
-        information
+        <a href="{{ path('app_transaction_new') }}">Créer une transaction</a>
+        
     {% else %}
         <div class="mb-3">
             Connectez vous pour voir les informations 
